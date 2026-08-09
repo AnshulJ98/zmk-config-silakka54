@@ -19,3 +19,11 @@ built until the Stage 0 map is daily-driven and typing speed has recovered.
   investigate only if actually wrong.
 - **Display** — PandaKB sells a Sharp low-power display for this board.
 - **Combos, tap-dance, macros, RGB** — explicitly out of scope for now.
+- **Miryoku study (week 3)** — mine its thumb layer-taps (Space=nav hold,
+  Backspace=num hold) alongside enabling the HRM scaffold. Do NOT adopt
+  wholesale: 36-key core + Colemak-DH is a second retrain and discards the
+  workflow-specific design (Aerospace alt, kitty ctrl-shift, TS symbols).
+  https://github.com/manna-harbour/miryoku
+- **Vimium C left-hand capitals** — cramped on single left Shift. Interim:
+  remap the offenders in Vimium C options. Structural fix: week-3 HRM adds
+  right home-row Shift, making left-hand capitals cross-hand.
