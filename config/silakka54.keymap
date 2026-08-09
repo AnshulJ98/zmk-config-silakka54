@@ -79,7 +79,7 @@
             bindings = <
 &studio_unlock &kp F1 &kp F2 &kp F3 &kp F4 &kp F5    &kp F6   &kp F7   &kp F8    &kp F9 &kp F10   &trans
 &kp LS(TAB) &trans &trans   &trans &kp LBKT &kp TILDE &trans   &kp RBKT &kp PLUS  &trans &trans    &trans
-&trans &trans &kp PIPE &kp AMPS &kp LPAR &kp GRAVE    &kp LT   &kp RPAR &kp EQUAL &kp GT &kp QMARK &trans
+&caps_word &trans &kp PIPE &kp AMPS &kp LPAR &kp GRAVE &kp LT  &kp RPAR &kp EQUAL &kp GT &kp QMARK &trans
 &trans &trans &trans   &trans   &kp LBRC &trans       &kp BSLH &kp RBRC &trans    &trans &trans    &trans
                        &trans &trans &trans              &trans &trans &trans
             >;
