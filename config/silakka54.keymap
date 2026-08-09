@@ -59,6 +59,13 @@
  * };
  */
 
+/* Caps behaves as a toggle: second press cancels. SPACE added so caps
+ * survive across words; Enter/punctuation still auto-cancel as a safety
+ * net, since the board has no caps indicator. */
+&caps_word {
+    continue-list = <UNDERSCORE BACKSPACE DELETE SPACE>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
