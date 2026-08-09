@@ -49,7 +49,7 @@ When pairing breaks:
    they cannot re-bond mid-procedure).
 2. Flash the real left/right UF2s back.
 3. Power both on near each other; they bond automatically. Re-pair the Mac
-   (Raise + ` cycles USB/BLE output; Raise + minus clears the active
+   (Raise + LAlt-corner cycles USB/BLE output; Raise + 5 clears the active
    Bluetooth profile).
 
 ## Vendor firmware rollback

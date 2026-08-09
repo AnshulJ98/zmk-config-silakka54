@@ -10,8 +10,8 @@ built until the Stage 0 map is daily-driven and typing speed has recovered.
   Ctrl+Shift cross-hand). Revisit if left-pinky Shift fatigues.
 - **`alt-shift-minus` / `alt-shift-equal` Aerospace resize** — collides with
   RAlt and MINUS sharing the right pinky. Workaround: `alt-r` resize mode.
-- **`<` on Lower** — only `>` got a Lower spot; `<` is Shift+comma. Add if
-  TypeScript generics annoy.
+- **F11/F12** — omitted from the Lower F-row (F1-F10 only); add if any
+  tool turns out to need them.
 - **Thumb-cluster geometry** — Studio layout uses the Lily58-derived shallow
   arc; fine-tune coordinates if the Studio render visibly mismatches the board.
 - **Battery reporting accuracy** — controllers are likely SuperMini clones;
