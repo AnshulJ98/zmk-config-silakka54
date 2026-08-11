@@ -66,6 +66,26 @@
     continue-list = <UNDERSCORE BACKSPACE DELETE SPACE>;
 };
 
+/* Tap = Esc, hold = Ctrl. Positional: the hold only triggers when chorded
+ * with the RIGHT hand or thumbs — same-hand ctrl chords route through the
+ * dedicated right-column Ctrl instead. prior-idle 190ms = 10500/55wpm;
+ * retune down as prose speed recovers (150 @ 70wpm). */
+/ {
+    behaviors {
+        esc_ctl: esc_ctl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <190>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 48 49 50 51 52 53>;
+            hold-trigger-on-release;
+        };
+    };
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -73,10 +93,10 @@
         base_layer {
             display-name = "Base";
             bindings = <
-&kp LALT  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp N6  &kp N7 &kp N8    &kp N9  &kp N0   &kp MINUS
+&kp LALT  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp N6  &kp N7 &kp N8    &kp N9  &kp N0   &kp RALT
 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y   &kp U  &kp I     &kp O   &kp P    &kp RCTRL
-&kp ESC   &kp A  &kp S  &kp D  &kp F  &kp G         &kp H   &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &kp RALT
+&esc_ctl LCTRL ESC &kp A &kp S &kp D &kp F &kp G    &kp H   &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                  &kp LGUI &mo LOWER &kp SPACE       &kp RET &mo RAISE &kp BSPC
             >;
         };
@@ -85,7 +105,7 @@
             display-name = "Lower";
             bindings = <
 &studio_unlock &kp F1 &kp F2 &kp F3 &kp F4 &kp F5    &kp F6   &kp F7   &kp F8    &kp F9 &kp F10   &trans
-&kp LS(TAB) &trans &trans   &trans &kp LBKT &kp TILDE &trans   &kp RBKT &kp PLUS  &trans &trans    &trans
+&kp LS(TAB) &trans &trans   &trans &kp LBKT &kp TILDE &trans   &kp RBKT &kp PLUS  &kp MINUS &kp UNDER &trans
 &caps_word &trans &kp PIPE &kp AMPS &kp LPAR &kp GRAVE &kp LT  &kp RPAR &kp EQUAL &kp GT &kp QMARK &trans
 &trans &trans &trans   &trans   &kp LBRC &trans       &kp BSLH &kp RBRC &trans    &trans &trans    &trans
                        &trans &trans &trans              &trans &trans &trans

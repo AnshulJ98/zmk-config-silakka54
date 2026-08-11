@@ -3,8 +3,11 @@
 Ideas deliberately not in scope for the initial setup. Nothing here gets
 built until the Stage 0 map is daily-driven and typing speed has recovered.
 
-- **Home row mods** — scaffold is commented in `config/silakka54.keymap`;
-  enable around week 3 once base typing is clean.
+- **Modifier architecture** — governed by docs/bakeoff-plan.md (LOCKED
+  2026-08-11): phases 1+2 shipped, Callum-sticky and WPM-gated hybrid HRM
+  queued. The commented HRM scaffold in the keymap serves Phase 4.
+- **WM layer (Aerospace on modified F-chords)** — parked; revisit only if
+  no phase solves alt-dispersion.
 - **Right-hand Shift** — base layer has left Shift only; the right outer
   column went to Ctrl and Alt (Aerospace runs on held Alt, Kitty on
   Ctrl+Shift cross-hand). Revisit if left-pinky Shift fatigues.
